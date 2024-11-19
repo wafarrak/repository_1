@@ -15,3 +15,15 @@ LEADING:3 TRAILING:3 \
 ILLUMINACLIP:/project/stuckert/wafarrak/adap-PE.fa:2:30:10:8:TRUE \
 MINLEN:25
 
+Next use trinity (compute node) : Trinity \
+--SS_lib_type RF \
+--no_version_check \
+--seqType fq \
+--output trinity/ \
+--max_memory 15G \
+--left SRR28168640.TRIM_1P.fastq.gz \
+--right SRR28168640.TRIM_2P.fastq.gz \
+--CPU 5 \
+--inchworm_cpu 5 \
+--full_cleanup \
+--no_bowtie
